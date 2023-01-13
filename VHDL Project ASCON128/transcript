@@ -1,0 +1,33 @@
+vsim LIB_BENCH.lxor_tb(lxor_tb_arch)
+# vsim LIB_BENCH.lxor_tb(lxor_tb_arch) 
+# Start time: 21:50:55 on Dec 29,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading lib_rtl.ascon_pack
+# Loading LIB_BENCH.lxor_tb(lxor_tb_arch)
+# Loading lib_rtl.lxor(lxor_arch)
+add wave -position insertpoint  \
+sim:/lxor_tb/State_in_s \
+sim:/lxor_tb/State_out_s \
+sim:/lxor_tb/enable_s \
+sim:/lxor_tb/data_s
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run

@@ -1,0 +1,52 @@
+#!/bin/bash
+
+export PROJECTNAME="."
+
+
+echo "the project location is : $PROJECTNAME"
+echo "removing libs"
+vdel -lib $PROJECTNAME/LIB/LIB_RTL -all
+vdel -lib $PROJECTNAME/LIB/LIB_BENCH -all
+
+echo "creating library "
+
+vlib $PROJECTNAME/LIB/LIB_RTL
+vmap LIB_RTL $PROJECTNAME/LIB/LIB_RTL
+vlib $PROJECTNAME/LIB/LIB_BENCH
+vmap LIB_BENCH $PROJECTNAME/LIB/LIB_BENCH
+
+# compilation des fichiers sources
+echo "compile vhdl sources"
+vcom -work LIB_RTL $PROJECTNAME/SRC/RTL/ascon_pack.vhd 
+vcom -work LIB_RTL $PROJECTNAME/SRC/RTL/Pc.vhd
+vcom -work LIB_RTL $PROJECTNAME/SRC/RTL/Pl.vhd
+vcom -work LIB_RTL $PROJECTNAME/SRC/RTL/Ps.vhd
+vcom -work LIB_RTL $PROJECTNAME/SRC/RTL/P.vhd
+vcom -work LIB_RTL $PROJECTNAME/SRC/RTL/HXOR.vhd
+vcom -work LIB_RTL $PROJECTNAME/SRC/RTL/LXOR.vhd
+vcom -work LIB_RTL $PROJECTNAME/SRC/RTL/MUX_REG.vhd
+vcom -work LIB_RTL $PROJECTNAME/SRC/RTL/mux_state.vhd
+vcom -work LIB_RTL $PROJECTNAME/SRC/RTL/state_register.vhd
+vcom -work LIB_RTL $PROJECTNAME/SRC/RTL/TAG.vhd
+vcom -work LIB_RTL $PROJECTNAME/SRC/RTL/C.vhd
+vcom -work LIB_RTL $PROJECTNAME/SRC/RTL/FSM.vhd
+
+# compilation des fichiers TB
+echo "compile vhdl test bench"
+vcom -work LIB_BENCH $PROJECTNAME/SRC/BENCH/Pc_tb.vhd
+vcom -work LIB_BENCH $PROJECTNAME/SRC/BENCH/Pl_tb.vhd
+vcom -work LIB_BENCH $PROJECTNAME/SRC/BENCH/Ps_tb.vhd
+vcom -work LIB_BENCH $PROJECTNAME/SRC/BENCH/P_tb.vhd
+vcom -work LIB_BENCH $PROJECTNAME/SRC/BENCH/MUX_REG_tb.vhd
+vcom -work LIB_BENCH $PROJECTNAME/SRC/BENCH/HXOR_tb.vhd
+vcom -work LIB_BENCH $PROJECTNAME/SRC/BENCH/LXOR_tb.vhd
+
+
+
+# lancement du simulateur
+echo "compilation finished"
+echo "start simulation..."
+
+# ATTENTION un seul VSIM decommenté à la fois!
+
+#vsim LIB_BENCH.ascon_top_tb_conf #-do ascon_top_wave.do
