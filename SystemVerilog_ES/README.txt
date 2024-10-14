@@ -1,1 +1,1 @@
-
+This repository contains my SystemVerilog projects, including assignments from my studies at Mines Saint-Etienne and personal work. The content showcases my understanding and expertise in the field of embedded systems and digital design using SystemVerilog.
