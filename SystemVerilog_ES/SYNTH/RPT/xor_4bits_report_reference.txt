@@ -1,0 +1,25 @@
+ 
+****************************************
+Report : reference
+Design : xor_4bits
+Version: R-2020.09-SP4
+Date   : Mon Sep 16 14:47:28 2024
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+XOR22              c35_CORELIB_TYP   200.199997       4   800.799988
+-----------------------------------------------------------------------------
+Total 1 references                                    800.799988
+1

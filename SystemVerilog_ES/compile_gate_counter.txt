@@ -1,0 +1,28 @@
+#!/bin/bash
+
+export PROJECTNAME="."
+
+
+echo "the project location is : $PROJECTNAME"
+echo "removing libs"
+vdel -lib $PROJECTNAME/LIB/LIB_GATES -all
+#vdel -lib $PROJECTNAME/LIB/LIB_BENCH -all
+
+echo "creating library "
+
+vlib $PROJECTNAME/LIB/LIB_GATES
+vmap LIB_GATES $PROJECTNAME/LIB/LIB_GATES
+#vlib $PROJECTNAME/LIB/LIB_BENCH
+#vmap LIB_BENCH $PROJECTNAME/LIB/LIB_BENCH
+
+
+#compilation des fichiers sources
+
+echo "-----vlog -work LIB_GATES $PROJECTNAME/SRC/GATES/counter_synth.v-----"
+vlog -work LIB_GATES $PROJECTNAME/SRC/GATES/counter_synth.v
+
+echo "-----vlog  -sv +acc -svinputport=net -L LIB_GATES -work LIB_BENCH $PROJECTNAME/SRC/BENCH/counter_synth_tb.sv ----"
+vlog -sv +acc -svinputport=net -L LIB_GATES -work LIB_BENCH $PROJECTNAME/SRC/BENCH/counter_synth_tb.sv
+
+#simulation gates
+vsim -L LIB_AMS -L LIB_GATES -sdftyp /DUT=$PROJECTNAME/SYNTH/SDF/counter_synth.sdf LIB_BENCH.counter_synth_tb -t ps #-do $PROJECTNAME/counter_synth_tb_wave.do

@@ -1,0 +1,43 @@
+ 
+****************************************
+Report : area
+Design : alu_nb_bits32
+Version: R-2020.09-SP4
+Date   : Sat Oct 12 17:08:38 2024
+****************************************
+
+Library(s) Used:
+
+    c35_CORELIB_TYP (File: /apps/DESIGN_KITS/AMS_410_ISR15/synopsys/c35_3.3V/c35_CORELIB_TYP.db)
+
+Number of ports:                           99
+Number of nets:                             1
+Number of cells:                            1
+Number of combinational cells:              1
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                          0
+Number of references:                       1
+
+Combinational area:                 36.400002
+Buf/Inv area:                        0.000000
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:             297.000000
+
+Total cell area:                    36.400002
+Total area:                        333.400002
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  ---------
+alu_nb_bits32                       36.4000    100.0   36.4000     0.0000  0.0000  alu_nb_bits32
+--------------------------------  ---------  -------  --------  ---------  ------  ---------
+Total                                                  36.4000     0.0000  0.0000
+
+1

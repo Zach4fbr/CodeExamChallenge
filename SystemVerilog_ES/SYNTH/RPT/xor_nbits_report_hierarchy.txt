@@ -1,0 +1,11 @@
+ 
+****************************************
+Report : hierarchy
+Design : xor_nbits_nb_g16
+Version: R-2020.09-SP4
+Date   : Sat Oct 12 15:27:39 2024
+****************************************
+
+xor_nbits_nb_g16
+    XOR22           c35_CORELIB_TYP
+1

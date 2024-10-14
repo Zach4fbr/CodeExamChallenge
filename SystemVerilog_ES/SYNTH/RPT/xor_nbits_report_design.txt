@@ -1,0 +1,78 @@
+ 
+****************************************
+Report : design
+Design : xor_nbits_nb_g16
+Version: R-2020.09-SP4
+Date   : Sat Oct 12 15:27:39 2024
+****************************************
+
+Design allows ideal nets on clock nets.
+
+Library(s) Used:
+
+    c35_CORELIB_TYP (File: /apps/DESIGN_KITS/AMS_410_ISR15/synopsys/c35_3.3V/c35_CORELIB_TYP.db)
+
+Local Link Library:
+
+    {c35_CORELIB_TYP.db, c35_IOLIB_TYP.db, c35_IOLIBV5_TYP.db}
+
+Flip-Flop Types:
+
+    No flip-flop types specified.
+
+Latch Types:
+
+    No latch types specified.
+
+Operating Conditions:
+
+
+    Operating Condition Name : nom_pvt
+    Library : c35_CORELIB_TYP
+    Process :   1.00
+    Temperature :  25.00
+    Voltage :   3.30
+    Interconnect Model : balanced_tree
+
+Wire Loading Model:
+
+    Selected manually by the user.
+
+Name           :   10k
+Location       :   c35_CORELIB_TYP
+Resistance     :   0.0014
+Capacitance    :   0.001633
+Area           :   1.8
+Slope          :   5
+Fanout   Length   Points Average Cap Std Deviation
+--------------------------------------------------------------
+     1     5.00
+
+
+
+Wire Loading Model Mode: enclosed.
+
+Timing Ranges:
+
+    No timing ranges specified.
+
+Pin Input Delays:
+
+    None specified.
+
+Pin Output Delays:
+
+    None specified.
+
+Disabled Timing Arcs:
+
+    No arcs disabled.
+
+Required Licenses:
+
+    None Required
+
+Design Parameters:
+
+    nb_g => 16
+1

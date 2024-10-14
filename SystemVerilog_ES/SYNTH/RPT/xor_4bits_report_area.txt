@@ -1,0 +1,43 @@
+ 
+****************************************
+Report : area
+Design : xor_4bits
+Version: R-2020.09-SP4
+Date   : Mon Sep 16 14:47:28 2024
+****************************************
+
+Library(s) Used:
+
+    c35_CORELIB_TYP (File: /apps/DESIGN_KITS/AMS_410_ISR15/synopsys/c35_3.3V/c35_CORELIB_TYP.db)
+
+Number of ports:                           12
+Number of nets:                            12
+Number of cells:                            4
+Number of combinational cells:              4
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                          0
+Number of references:                       1
+
+Combinational area:                800.799988
+Buf/Inv area:                        0.000000
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:             108.000000
+
+Total cell area:                   800.799988
+Total area:                        908.799988
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  ---------
+xor_4bits                          800.8000    100.0  800.8000     0.0000  0.0000  xor_4bits
+--------------------------------  ---------  -------  --------  ---------  ------  ---------
+Total                                                 800.8000     0.0000  0.0000
+
+1

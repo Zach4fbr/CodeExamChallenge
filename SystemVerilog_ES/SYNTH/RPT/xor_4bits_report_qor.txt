@@ -1,0 +1,83 @@
+ 
+****************************************
+Report : qor
+Design : xor_4bits
+Version: R-2020.09-SP4
+Date   : Mon Sep 16 14:47:28 2024
+****************************************
+
+
+  Timing Path Group (none)
+  -----------------------------------
+  Levels of Logic:               1.00
+  Critical Path Length:          0.22
+  Critical Path Slack:         uninit
+  Critical Path Clk Period:       n/a
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:          0
+  Hierarchical Port Count:          0
+  Leaf Cell Count:                  4
+  Buf/Inv Cell Count:               0
+  Buf Cell Count:                   0
+  Inv Cell Count:                   0
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:         4
+  Sequential Cell Count:            0
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:      800.799988
+  Noncombinational Area:     0.000000
+  Buf/Inv Area:              0.000000
+  Total Buffer Area:             0.00
+  Total Inverter Area:           0.00
+  Macro/Black Box Area:      0.000000
+  Net Area:                108.000000
+  -----------------------------------
+  Cell Area:               800.799988
+  Design Area:             908.799988
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:            12
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: tallinn.emse.fr
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    0.00
+  Logic Optimization:                  0.00
+  Mapping Optimization:                0.59
+  -----------------------------------------
+  Overall Compile Time:                1.39
+  Overall Compile Wall Clock Time:     1.81
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1

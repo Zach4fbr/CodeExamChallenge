@@ -1,0 +1,43 @@
+ 
+****************************************
+Report : area
+Design : counter_nb_bits4
+Version: R-2020.09-SP4
+Date   : Sat Oct 12 15:47:38 2024
+****************************************
+
+Library(s) Used:
+
+    c35_CORELIB_TYP (File: /apps/DESIGN_KITS/AMS_410_ISR15/synopsys/c35_3.3V/c35_CORELIB_TYP.db)
+
+Number of ports:                            8
+Number of nets:                            17
+Number of cells:                           11
+Number of combinational cells:              7
+Number of sequential cells:                 4
+Number of macros/black boxes:               0
+Number of buf/inv:                          3
+Number of references:                       5
+
+Combinational area:                618.800018
+Buf/Inv area:                      127.400002
+Noncombinational area:            1383.199951
+Macro/Black Box area:                0.000000
+Net Interconnect area:             279.000000
+
+Total cell area:                  2001.999969
+Total area:                       2280.999969
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  ---------
+counter_nb_bits4                  2002.0000    100.0  618.8000  1383.2000  0.0000  counter_nb_bits4
+--------------------------------  ---------  -------  --------  ---------  ------  ---------
+Total                                                 618.8000  1383.2000  0.0000
+
+1

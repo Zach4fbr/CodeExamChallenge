@@ -1,0 +1,15 @@
+ 
+****************************************
+Report : hierarchy
+Design : counter_nb_bits4
+Version: R-2020.09-SP4
+Date   : Sat Oct 12 15:47:38 2024
+****************************************
+
+counter_nb_bits4
+    ADD22           c35_CORELIB_TYP
+    CLKIN0          c35_CORELIB_TYP
+    CLKIN6          c35_CORELIB_TYP
+    DFEC1           c35_CORELIB_TYP
+    NOR20           c35_CORELIB_TYP
+1

@@ -1,0 +1,29 @@
+ 
+****************************************
+Report : reference
+Design : counter_nb_bits4
+Version: R-2020.09-SP4
+Date   : Sat Oct 12 15:47:38 2024
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+ADD22              c35_CORELIB_TYP   145.600006       3   436.800018 r
+CLKIN0             c35_CORELIB_TYP    36.400002       2    72.800003
+CLKIN6             c35_CORELIB_TYP    54.599998       1    54.599998
+DFEC1              c35_CORELIB_TYP   345.799988       4  1383.199951 n
+NOR20              c35_CORELIB_TYP    54.599998       1    54.599998
+-----------------------------------------------------------------------------
+Total 5 references                                   2001.999969
+1

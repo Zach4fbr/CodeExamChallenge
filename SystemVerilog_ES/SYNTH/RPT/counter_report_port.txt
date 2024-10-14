@@ -1,0 +1,74 @@
+ 
+****************************************
+Report : port
+        -verbose
+Design : counter_nb_bits4
+Version: R-2020.09-SP4
+Date   : Sat Oct 12 15:47:38 2024
+****************************************
+
+
+                       Pin      Wire     Max     Max     Connection
+Port           Dir     Load     Load     Trans   Cap     Class      Attrs
+--------------------------------------------------------------------------------
+clock_i        in      0.0000   0.0000   --      --      --         
+enable_i       in      0.0000   0.0000   --      --      --         
+init_i         in      0.0000   0.0000   --      --      --         
+resetb_i       in      0.0000   0.0000   --      --      --         
+count_o[0]     out     0.0000   0.0000   --      --      --         
+count_o[1]     out     0.0000   0.0000   --      --      --         
+count_o[2]     out     0.0000   0.0000   --      --      --         
+count_o[3]     out     0.0000   0.0000   --      --      --         
+
+
+              External  Max             Min                Min       Min
+              Number    Wireload        Wireload           Pin       Wire
+Port          Points    Model           Model              Load      Load
+--------------------------------------------------------------------------------
+clock_i            1      --              --              --        -- 
+enable_i           1      --              --              --        -- 
+init_i             1      --              --              --        -- 
+resetb_i           1      --              --              --        -- 
+count_o[0]         1      --              --              --        -- 
+count_o[1]         1      --              --              --        -- 
+count_o[2]         1      --              --              --        -- 
+count_o[3]         1      --              --              --        -- 
+
+                    Input Delay
+                  Min             Max       Related   Max
+Input Port    Rise    Fall    Rise    Fall   Clock  Fanout
+--------------------------------------------------------------------------------
+clock_i       --      --      --      --      --      -- 
+enable_i      --      --      --      --      --      -- 
+init_i        --      --      --      --      --      -- 
+resetb_i      --      --      --      --      --      -- 
+
+
+               Max Drive      Min Drive      Resistance    Min    Min       Cell
+Input Port    Rise    Fall   Rise    Fall   Max     Min    Cap    Fanout    Deg
+--------------------------------------------------------------------------------
+clock_i       --      --     --      --     --      --     --     --        -- 
+enable_i      --      --     --      --     --      --     --     --        -- 
+init_i        --      --     --      --     --      --     --     --        -- 
+resetb_i      --      --     --      --     --      --     --     --        -- 
+
+
+               Max Tran        Min Tran
+Input Port    Rise    Fall    Rise    Fall
+--------------------------------------------------------------------------------
+clock_i       --      --      --      -- 
+enable_i      --      --      --      -- 
+init_i        --      --      --      -- 
+resetb_i      --      --      --      -- 
+
+
+                    Output Delay
+                  Min             Max      Related  Fanout
+Output Port   Rise    Fall    Rise    Fall  Clock     Load
+--------------------------------------------------------------------------------
+count_o[0]    --      --      --      --      --      0.00
+count_o[1]    --      --      --      --      --      0.00
+count_o[2]    --      --      --      --      --      0.00
+count_o[3]    --      --      --      --      --      0.00
+
+1

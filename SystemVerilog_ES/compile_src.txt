@@ -1,0 +1,65 @@
+#!/bin/bash
+
+export PROJECTNAME="."
+
+
+echo "the project location is : $PROJECTNAME"
+echo "removing libs"
+vdel -lib $PROJECTNAME/LIB/LIB_RTL -all
+vdel -lib $PROJECTNAME/LIB/LIB_BENCH -all
+
+echo "creating library "
+
+vlib $PROJECTNAME/LIB/LIB_RTL
+vmap LIB_RTL $PROJECTNAME/LIB/LIB_RTL
+vlib $PROJECTNAME/LIB/LIB_BENCH
+vmap LIB_BENCH $PROJECTNAME/LIB/LIB_BENCH
+
+# compilation des fichiers sources
+echo "compile vhdl sources"
+# vlog -sv +acc -svinputport=net -work LIB_RTL $PROJECTNAME/SRC/RTL/xor2.sv
+# vlog -sv +acc -svinputport=net -work LIB_RTL $PROJECTNAME/SRC/RTL/xor_4bits.sv
+# vlog -sv +acc -svinputport=net -work LIB_RTL $PROJECTNAME/SRC/RTL/xor_nbits.sv
+# vlog -sv +acc -svinputport=net -work LIB_RTL $PROJECTNAME/SRC/RTL/dff.sv
+# vlog -sv +acc -svinputport=net -work LIB_RTL $PROJECTNAME/SRC/RTL/register.sv
+# vlog -sv +acc -svinputport=net -work LIB_RTL $PROJECTNAME/SRC/RTL/adder32_structural.sv
+# vlog -sv +acc -svinputport=net -work LIB_RTL $PROJECTNAME/SRC/RTL/adder32_dataflow.sv
+# vlog -sv +acc -svinputport=net -work LIB_RTL $PROJECTNAME/SRC/RTL/alu.sv
+vlog -sv +acc -svinputport=net -work LIB_RTL $PROJECTNAME/SRC/RTL/counter.sv
+
+
+
+# Compilation des fichiers TB
+echo "compile vhdl test bench"
+# vlog -sv +acc -svinputport=net -L LIB_RTL -work LIB_BENCH $PROJECTNAME/SRC/BENCH/xor2_tb.sv
+# vlog -sv +acc -svinputport=net -L LIB_RTL -work LIB_BENCH $PROJECTNAME/SRC/BENCH/xor_4bits_tb.sv
+# vlog -sv +acc -svinputport=net -L LIB_RTL -work LIB_BENCH $PROJECTNAME/SRC/BENCH/xor_nbits_tb.sv
+# vlog -sv +acc -svinputport=net -L LIB_RTL -work LIB_BENCH $PROJECTNAME/SRC/BENCH/dff_tb.sv
+# vlog -sv +acc -svinputport=net -L LIB_RTL -work LIB_BENCH $PROJECTNAME/SRC/BENCH/register_tb.sv
+# vlog -sv +acc -svinputport=net -L LIB_RTL -work LIB_BENCH $PROJECTNAME/SRC/BENCH/adder32_structural_tb.sv
+# vlog -sv +acc -svinputport=net -L LIB_RTL -work LIB_BENCH $PROJECTNAME/SRC/BENCH/adder32_dataflow_tb.sv
+# vlog -sv +acc -svinputport=net -L LIB_RTL -work LIB_BENCH $PROJECTNAME/SRC/BENCH/alu_tb.sv
+vlog -sv +acc -svinputport=net -L LIB_RTL -work LIB_BENCH $PROJECTNAME/SRC/BENCH/counter_tb.sv
+
+
+# lancement du simulateur
+echo "compilation finished"
+echo "start simulation..."
+
+# ATTENTION un seul VSIM decommenté à la fois!
+# vsim -L LIB_RTL LIB_BENCH.xor2_tb # -do xor2_tb_wave.do
+# vsim -L LIB_RTL LIB_BENCH.xor_nbits_tb
+# vsim -L LIB_RTL LIB_BENCH.dff_tb 
+# vsim -L LIB_RTL LIB_BENCH.register_tb 
+# vsim -L LIB_RTL LIB_BENCH.adder32_structural_tb 
+# vsim -L LIB_RTL LIB_BENCH.adder32_dataflow_tb 
+# vsim -L LIB_RTL LIB_BENCH.alu_tb
+vsim -L LIB_RTL LIB_BENCH.counter_tb
+
+
+
+
+
+
+
+

@@ -1,0 +1,11 @@
+ 
+****************************************
+Report : hierarchy
+Design : alu_nb_bits32
+Version: R-2020.09-SP4
+Date   : Sat Oct 12 17:08:38 2024
+****************************************
+
+alu_nb_bits32
+    LOGIC0          c35_CORELIB_TYP
+1

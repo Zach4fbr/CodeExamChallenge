@@ -1,0 +1,11 @@
+ 
+****************************************
+Report : hierarchy
+Design : xor_4bits
+Version: R-2020.09-SP4
+Date   : Mon Sep 16 14:47:28 2024
+****************************************
+
+xor_4bits
+    XOR22           c35_CORELIB_TYP
+1

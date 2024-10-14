@@ -1,0 +1,25 @@
+ 
+****************************************
+Report : reference
+Design : xor_nbits_nb_g16
+Version: R-2020.09-SP4
+Date   : Sat Oct 12 15:27:39 2024
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+XOR22              c35_CORELIB_TYP   200.199997      16  3203.199951
+-----------------------------------------------------------------------------
+Total 1 references                                   3203.199951
+1
