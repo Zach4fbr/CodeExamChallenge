@@ -1,0 +1,80 @@
+m255
+K4
+z2
+!s11f vlog 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/zacharie.lahcene/SystemVerilog_ES
+T_opt
+!s110 1728748087
+VQUT9imNeMB96id0:eg1kn0
+04 10 4 work counter_tb fast 0
+=1-bc97e1a36448-670a9a37-9be09-39b79
+o-quiet -auto_acc_if_foreign -work LIB_BENCH -L LIB_RTL
+Z1 tCvgOpt 0
+n@_opt
+Z2 OL;O;2020.4;71
+R0
+T_opt1
+!s110 1728748773
+VM9FDDlhogYTD7aGS1:UgH1
+04 16 4 work counter_synth_tb fast 0
+=1-bc97e1a36448-670a9ce5-1068c-3a2be
+o-quiet -auto_acc_if_foreign -work LIB_BENCH -L LIB_AMS -L LIB_GATES -sdftyp /DUT=./SYNTH/SDF/counter_synth.sdf -suppress 1948
+R1
+n@_opt1
+R2
+vcounter_synth_tb
+Z3 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+!s110 1728748770
+!i10b 1
+!s100 FgCiEWe794dXPo9MDO1MZ3
+Z4 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IGSKOGEnn:icJ[4oW2UZoz2
+S1
+R0
+w1728741816
+8./SRC/BENCH/counter_synth_tb.sv
+F./SRC/BENCH/counter_synth_tb.sv
+!i122 1
+Z5 L0 3 69
+Z6 VDg1SIo80bB@j0V0VzS_@n1
+Z7 OL;L;2020.4;71
+r1
+!s85 0
+31
+!s108 1728748770.000000
+!s107 ./SRC/BENCH/counter_synth_tb.sv|
+!s90 -sv|+acc|-svinputport=net|-L|LIB_GATES|-work|LIB_BENCH|./SRC/BENCH/counter_synth_tb.sv|
+!i113 0
+o-sv +acc -svinputport=net -L LIB_GATES -work LIB_BENCH -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vcounter_tb
+R3
+!s110 1728748085
+!i10b 1
+!s100 Qe^C6A5JiEoPzOKXZWePP0
+R4
+IgQD9jlfbWR`dK<NKT@V]T0
+S1
+R0
+w1728051311
+8./SRC/BENCH/counter_tb.sv
+F./SRC/BENCH/counter_tb.sv
+!i122 0
+R5
+R6
+R7
+r1
+!s85 0
+31
+!s108 1728748085.000000
+!s107 ./SRC/BENCH/counter_tb.sv|
+!s90 -sv|+acc|-svinputport=net|-L|LIB_RTL|-work|LIB_BENCH|./SRC/BENCH/counter_tb.sv|
+!i113 0
+o-sv +acc -svinputport=net -L LIB_RTL -work LIB_BENCH -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
