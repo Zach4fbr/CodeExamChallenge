@@ -1,4 +1,4 @@
-ThSystemVerilog_ES
+SystemVerilog_ES
 This repository contains my SystemVerilog projects, all executed using ModelSim. These projects include various assignments and personal work I have completed as part of my engineering studies at Mines Saint-Etienne, with a focus on Embedded Systems and digital design.
 
 Technologies Used
